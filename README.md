@@ -83,9 +83,10 @@ In this case, the test correctly fails because the vault creation flow in Obsidi
 ```
 This result indicates that the test could not be completed due to application-level limitations rather than an execution failure.
 
-Notes
+## Notes
 The system interacts with a real Android emulator; no UI behavior is mocked.
 If a test step cannot be automated due to application constraints, the system reports this explicitly instead of forcing unreliable actions.
 The objective is accurate QA evaluation and reasoning, not UI hacking or brittle automation.
+
 Author: Yishan Liu
 QualGent Research Intern Coding Challenge
