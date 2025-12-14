@@ -62,6 +62,7 @@ This execution demonstrates the importance of reasoning in mobile QA automation.
 Accurately detecting when automation should stop is preferable to forcing unreliable UI actions,
 and aligns with real-world mobile testing practices.
 
-## Author: Yishan Liu
-## QualGent Research Intern Coding Challenge
+Author: Yishan Liu
+
+QualGent Research Intern Coding Challenge
 
