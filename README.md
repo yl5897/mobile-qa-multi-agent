@@ -70,14 +70,11 @@ mobile-qa-multi-agent/
 
 ```bash
 python main.py
-```md
-The system will generate a plan, execute each step on the emulator using adb, and evaluate the final result.
+### The system will generate a plan, execute each step on the emulator using adb, and evaluate the final result.
 The system interacts with a real Android emulator. No UI behavior is mocked or simulated.
-
-```md
 ## Example Test Case
 Open Obsidian, create a new Vault named "InternVault", and enter the vault.
-## Example Result
+### Example Result
 In this case, the test correctly fails because the vault creation flow in Obsidian is not accessible through adb-based automation.
 ```json
 {
@@ -85,7 +82,7 @@ In this case, the test correctly fails because the vault creation flow in Obsidi
   "failure_type": "ui_not_automatable",
   "reason": "Vault creation flow is internal to MainActivity and not accessible via adb tap, uiautomator, or intent"
 }
-This result indicates that the test could not be completed due to application-level limitations rather than an execution failure.
+###This result indicates that the test could not be completed due to application-level limitations rather than an execution failure.
 
 ## Notes
 
