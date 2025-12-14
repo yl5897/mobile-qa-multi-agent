@@ -1,11 +1,8 @@
 # Mobile QA Multi-Agent System
 
 This project is a prototype mobile QA system built for the QualGent Research Intern Coding Challenge.
-
 It takes a natural-language QA test case, breaks it into executable steps, runs those steps on a real Android emulator using adb, and then determines whether the test should pass or fail.
-
 The focus of this project is correct QA evaluation and reasoning, rather than forcing UI automation where it is not feasible.
-
 ---
 
 ## Architecture
@@ -70,18 +67,20 @@ mobile-qa-multi-agent/
 
 ```bash
 python main.py
+```
 The system will generate a plan, execute each step on the emulator using adb, and evaluate the final result.
 The system interacts with a real Android emulator. No UI behavior is mocked or simulated.
-Example Test Case
+4. Example Test Case
 Open Obsidian, create a new Vault named "InternVault", and enter the vault.
-Example Result
+5. Example Result
 In this case, the test correctly fails because the vault creation flow in Obsidian is not accessible through adb-based automation.
-```json
+```bash
 {
   "status": "FAIL",
   "failure_type": "ui_not_automatable",
   "reason": "Vault creation flow is internal to MainActivity and not accessible via adb tap, uiautomator, or intent"
 }
+```
 This result indicates that the test could not be completed due to application-level limitations rather than an execution failure.
 
 Notes
