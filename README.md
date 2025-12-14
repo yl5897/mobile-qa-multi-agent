@@ -70,8 +70,10 @@ python main.py
 ```
 The system will generate a plan, execute each step on the emulator using adb, and evaluate the final result.
 The system interacts with a real Android emulator. No UI behavior is mocked or simulated.
+
 4. Example Test Case
 Open Obsidian, create a new Vault named "InternVault", and enter the vault.
+
 5. Example Result
 In this case, the test correctly fails because the vault creation flow in Obsidian is not accessible through adb-based automation.
 ```bash
@@ -89,4 +91,5 @@ If a test step cannot be automated due to application constraints, the system re
 The objective is accurate QA evaluation and reasoning, not UI hacking or brittle automation.
 
 Author: Yishan Liu
+
 QualGent Research Intern Coding Challenge
